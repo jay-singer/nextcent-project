@@ -39,7 +39,7 @@ function NavBar() {
     <div className="font-fontFAm">
       <nav
         id="nav"
-        className="flex lg:justify-between  items-center px-20 py-4 fixed w-full"
+        className="flex justify-between  items-center lg:px-20 md:px-10 px-5 lg:py-4 fixed w-full"
       >
         <div>
           <a href="/">
