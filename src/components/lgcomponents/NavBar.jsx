@@ -56,7 +56,7 @@ function NavBar() {
             active ? "block absolute top-[72px] left-0 right-0" : "hidden"
           }`}
         >
-          <ul className="flex lg:flex-row flex-col items-center lg:gap-10 gap-5 lg:pt-0 pt-5 justify-end lg:pe-10">
+          <ul className="flex lg:flex-row flex-col items-center lg:gap-10 gap-5 lg:pt-0 pt-5 lg:justify-end lg:pe-10 pe-0">
             {navArr.map((item, index) => (
               <motion.li
                 whileHover={{ scale: 1.1 }}
