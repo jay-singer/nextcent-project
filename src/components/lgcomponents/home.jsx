@@ -13,7 +13,7 @@ function Home() {
               from 8 years
             </span>
           </h1>
-          <p className="text-neutral-Gray lg:text-regular-body1 text-sm md:text-start text-center">
+          <p className="text-neutral-Gray lg:text-regular-body1 text-sm md:text-start text-center lg:px-0 px-3">
             Where to grow your business as a photographer: site or social media?
           </p>
           <SecondaryBtn label={"Register"} icons={""} />

@@ -52,7 +52,7 @@ function NavBar() {
         <div
           className={`flex-grow  lg:block overflow-hidden  ${
             active
-              ? "block absolute top-[40px] left-0 right-0 bg-colorsTint-tint5 h-[100vh] z-50"
+              ? "block absolute top-[30px] left-0 right-0 bg-colorsTint-tint5 h-[100vh] z-50"
               : "hidden"
           }`}
         >
