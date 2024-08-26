@@ -2,3 +2,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 20%;
+  min-width: 0;
+}
+@media (max-width: 768px) {
+  .embla__slide {
+    flex: 0 0 40%;
+  }
+}
+@media (max-width: 480px) {
+  .embla__slide {
+    flex: 0 0 25%;
+  }
+}
