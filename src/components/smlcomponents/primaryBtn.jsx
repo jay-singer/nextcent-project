@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function PrimaryBtn({ label, style }) {
+function PrimaryBtn({ label }) {
   const [active, setActive] = useState(false);
   const handleMove = () => {
     setActive(!active);
@@ -13,7 +13,7 @@ function PrimaryBtn({ label, style }) {
       <button
         onMouseEnter={handleMove}
         onMouseLeave={handleLeave}
-        className=" bg-primary text-neutral-white flex text-medium-body4 px-4 py-2 rounded-md gap-1 items-center "
+        className=" bg-primary whitespace-nowrap text-neutral-white flex text-medium-body4 px-4 py-2 rounded-md gap-1 items-center "
       >
         {label}
         <svg
