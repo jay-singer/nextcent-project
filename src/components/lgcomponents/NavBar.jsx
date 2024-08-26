@@ -15,7 +15,7 @@ function NavBar() {
     }
   };
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 140) {
+    if (window.scrollY > 10) {
       document.getElementById("nav").style =
         " box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);";
     } else {
@@ -37,7 +37,7 @@ function NavBar() {
     <div className="font-fontFAm">
       <nav
         id="nav"
-        className="flex justify-between  items-center lg:px-20 md:px-10 px-5 lg:py-4 fixed w-full"
+        className="flex justify-between  items-center lg:px-20  md:px-10 px-5 lg:py-4 fixed top-0 w-full left-0 right-0 z-50 bg-neutral-white"
       >
         <div>
           <a href="/">
@@ -51,7 +51,9 @@ function NavBar() {
 
         <div
           className={`flex-grow  lg:block overflow-hidden  ${
-            active ? "block absolute top-[72px] left-0 right-0" : "hidden"
+            active
+              ? "block absolute top-[40px] left-0 right-0 bg-colorsTint-tint5 h-[100vh] z-50"
+              : "hidden"
           }`}
         >
           <ul className="flex lg:flex-row flex-col items-center lg:gap-10 gap-5 lg:pt-0 pt-5 lg:justify-end lg:pe-10 pe-0">
@@ -61,7 +63,7 @@ function NavBar() {
                 key={index}
                 custom={index}
                 initial="visible"
-                className="lg:block lg:bg-transparent bg-colorsTint-tint5 lg:p-0 px-5 py-1 lg-rounded-none rounded-md"
+                className="lg:block lg:bg-transparent bg-colorsTint-tint4 lg:p-0 px-5 py-1 lg-rounded-none rounded-md"
               >
                 <motion.a
                   href="/"
@@ -76,7 +78,28 @@ function NavBar() {
         </div>
 
         <div>
-          <PrimaryBtn label={"Register Now"} />
+          <PrimaryBtn
+            label={"Register Now"}
+            icons={
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className={`size-6 ${
+                  active &&
+                  "translate-x-2 transition-all duration-400 ease-in-out "
+                } `}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+            }
+          />
           <button onClick={handleClick} className="lg:hidden block">
             <svg
               xmlns="http://www.w3.org/2000/svg"

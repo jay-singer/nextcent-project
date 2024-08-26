@@ -38,6 +38,7 @@ export default {
         fontFAm: "Inter",
       },
       fontSize: {
+        fontXl: "45px",
         heading1: "64px",
         heading2: "36px",
         heading3: "28px",
