@@ -1,6 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
-function PrimaryBtn({ label, icons }) {
+function SecondaryBtn({ label, icons }) {
   const [active, setActive] = useState(false);
   const handleMove = () => {
     setActive(!active);
@@ -9,11 +9,11 @@ function PrimaryBtn({ label, icons }) {
     setActive(false);
   };
   return (
-    <div className="lg:block hidden">
+    <div className=" flex md:justify-start justify-center">
       <button
         onMouseEnter={handleMove}
         onMouseLeave={handleLeave}
-        className=" bg-primary whitespace-nowrap text-neutral-white flex text-medium-body4 px-4 py-2 rounded-sm gap-1 items-center "
+        className=" bg-primary whitespace-nowrap text-neutral-white md:w-[93px] w-1/2 justify-center  flex text-medium-body4 px-4 py-2 rounded-sm gap-1 items-center "
       >
         <span> {label}</span>
         <span
@@ -28,8 +28,8 @@ function PrimaryBtn({ label, icons }) {
     </div>
   );
 }
-PrimaryBtn.propTypes = {
+SecondaryBtn.propTypes = {
   label: PropTypes.string.isRequired, // label should be a required string
   icons: PropTypes.element, // icons should be a React element (like an SVG or JSX component)
 };
-export default PrimaryBtn;
+export default SecondaryBtn;

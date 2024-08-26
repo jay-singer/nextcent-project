@@ -1,4 +1,4 @@
-import PrimaryBtn from "../smlcomponents/primaryBtn";
+import SecondaryBtn from "../smlcomponents/secondaryBtn";
 
 function Home() {
   return (
@@ -16,7 +16,7 @@ function Home() {
           <p className="text-neutral-Gray lg:text-regular-body1 text-sm md:text-start text-center">
             Where to grow your business as a photographer: site or social media?
           </p>
-          <PrimaryBtn label={"Register"} style={""} />
+          <SecondaryBtn label={"Register"} icons={""} />
         </div>
         <div>
           <img
