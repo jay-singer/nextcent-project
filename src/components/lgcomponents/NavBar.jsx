@@ -12,8 +12,6 @@ function NavBar() {
   const handleResize = () => {
     if (window.innerWidth >= 768) {
       setActive(false); // Ensures the menu is always visible on large screens
-    } else {
-      setActive(true); // Hides the menu on smaller screens
     }
   };
   window.addEventListener("scroll", () => {
