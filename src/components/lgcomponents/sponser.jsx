@@ -22,9 +22,9 @@ function Sponser() {
   return (
     <div className="mt-16">
       <div className="flex flex-col items-center justify-center gap-4">
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-4">
           <h2 className="text-center font-semibold text-2xl">Our Clients</h2>
-          <p className="text-center text-neutral-Gray text-base">
+          <p className="text-center text-neutral-Gray text-base md:px-0 px-2">
             We have been working with some Fortune 500+ clients
           </p>
         </div>
