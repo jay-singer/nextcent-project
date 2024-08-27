@@ -69,7 +69,7 @@ function Work() {
               British Dragon Boat Racing Association
             </p>
             <div className="flex md:flex-row flex-col items-center md:gap-10 w-full  md:w-[80%] gap-4  mt-3">
-              <div className="flex flex-1 justify-between  gap-2">
+              <div className="flex flex-1  w-full justify-between  gap-2  md:gap-0">
                 <img
                   className="size-6 md:size-[30px] lg:siz-14"
                   src="./assets/2image/Logo (7).svg"
