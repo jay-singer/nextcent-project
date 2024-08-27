@@ -1,28 +1,10 @@
-import { useState } from "react";
 import PropTypes from "prop-types";
 function SecondaryBtn({ label, icons }) {
-  const [active, setActive] = useState(false);
-  const handleMove = () => {
-    setActive(!active);
-  };
-  const handleLeave = () => {
-    setActive(false);
-  };
   return (
-    <div className=" flex md:justify-start justify-center">
-      <button
-        onMouseEnter={handleMove}
-        onMouseLeave={handleLeave}
-        className=" bg-primary whitespace-nowrap text-neutral-white md:w-[93px] w-1/2 justify-center  flex text-medium-body4 px-4 py-2 rounded-sm gap-1 items-center "
-      >
-        <span> {label}</span>
-        <span
-          className={` ${
-            active && "translate-x-2 transition-all duration-400 ease-in-out "
-          } `}
-        >
-          {icons}
-        </span>
+    <div className=" flex md:justify-start justify-center ">
+      <button className=" bg-primary whitespace-nowrap text-neutral-white md:w-[93px]  justify-center  flex text-medium-body4 px-4 py-2 rounded-sm gap-1 items-center ">
+        <span className="text-body3"> {label}</span>
+        <span>{icons}</span>
         {}
       </button>
     </div>
