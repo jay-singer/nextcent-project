@@ -34,7 +34,7 @@ function Work() {
           </div>
         </div>
         {/** Second section */}
-        <div className=" flex  lg:flex-row flex-col justify-center items-center md:w-[80%]  w-3/4   gap-10">
+        <div className=" flex  lg:flex-row flex-col justify-center items-center md:w-[80%]  w-3/4   md:gap-10 gap-2">
           {/** image division */}
           <div className="lg:w-[26rem] md:w-[20rem] lg:self-start ">
             <img
