@@ -11,7 +11,7 @@ function OurCommunity() {
           </p>
         </div>
         <div className="flex lg:flex-row flex-col justify-center items-center gap-10 lg:gap-0 lg:mt-10 mt-7 ">
-          <div className="w-full md:w-2/3 flex flex-col items-center gap-3 lg:border-r lg:border-l-0  lg:border-t-0   lg:border-b-0 lg:border-neutral-Gray border-neutral-silver rounded-md lg:rounded-none shadow-md  pb-4 lg:shadow-none">
+          <div className="w-full md:w-2/3 flex flex-col items-center gap-3 lg:border-r lg:border-l-0  lg:border-t-0   lg:border-b-0 lg:border-neutral-Gray  rounded-md lg:rounded-none shadow-md  pb-4 lg:shadow-none">
             <img src="./assets/2image/Icon.svg" alt="hello" />
             <h1 className="text-neutral-DarkGray font-bold lg:text-[25px] text-center w-2/3  ">
               Membership Organizations
@@ -21,7 +21,7 @@ function OurCommunity() {
               membership renewals and payments
             </p>
           </div>
-          <div className=" w-full  md:w-2/3 flex flex-col items-center gap-3 lg:border-r lg:border-l-0  lg:border-t-0   lg:border-b-0 lg:border-neutral-Gray border border-neutral-silver rounded-md lg:rounded-none shadow-md  pb-4 lg:shadow-none ">
+          <div className=" w-full  md:w-2/3 flex flex-col items-center gap-3 lg:border-r lg:border-l-0  lg:border-t-0   lg:border-b-0 lg:border-neutral-Gray  rounded-md lg:rounded-none shadow-md  pb-4 lg:shadow-none ">
             <img src="./assets/2image/Icon (1).svg" alt="hello" />
             <h1 className="text-neutral-DarkGray font-bold lg:text-[25px] text-center lg:w-1/3 w-2/3">
               National Associations
@@ -31,7 +31,7 @@ function OurCommunity() {
               membership renewals and payments
             </p>
           </div>
-          <div className=" w-full md:w-2/3 flex flex-col items-center gap-3 lg:border-none border border-neutral-silver rounded-md lg:rounded-none shadow-md  pb-4 lg:shadow-none">
+          <div className=" w-full md:w-2/3 flex flex-col items-center gap-3 lg:border-none  rounded-md lg:rounded-none shadow-md  pb-4 lg:shadow-none">
             <img src="./assets/2image/Icon (2).svg" alt="hello" />
             <h1 className="text-neutral-DarkGray font-bold lg:text-[25px] text-center lg:w-1/3 w-2/3">
               Clubs And Groups
