@@ -11,7 +11,7 @@ import Work from "./components/lgcomponents/work";
 
 function App() {
   return (
-    <div className="pb-[50rem] font-fontFAm">
+    <div className="font-fontFAm">
       <NavBar />
       <Home />
       <Sponser />
