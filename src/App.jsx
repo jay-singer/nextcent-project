@@ -1,4 +1,5 @@
 import "./App.css";
+import Blogs from "./components/lgcomponents/blogs";
 import OurCommunity from "./components/lgcomponents/community";
 import Feature from "./components/lgcomponents/Features";
 import Home from "./components/lgcomponents/home";
@@ -17,6 +18,7 @@ function App() {
       <Feature />
       <Pricing />
       <Work />
+      <Blogs />
     </div>
   );
 }
