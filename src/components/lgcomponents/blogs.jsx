@@ -8,7 +8,7 @@ function Blogs() {
           <h2 className="text-neutral-DarkGray font-bold lg:text-[25px]  ">
             Caring is the new marketing
           </h2>
-          <p className="text-center text-neutral-Gray text-body4  lg:text-body3 mb-2 lg:w-[42%]">
+          <p className="md:text-center text-neutral-Gray text-body4  lg:text-body3 mb-2 lg:w-[42%] w-[80%] text-start">
             The Nextcent blog is the best place to read about the latest
             membership insights, trends and more. See who&apos;s joining the
             community, read about how our community are increasing their
