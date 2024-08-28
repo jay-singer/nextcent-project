@@ -21,13 +21,13 @@ function Blogs() {
             style={{
               backgroundImage: `url(${image})`,
             }}
-            className=" h-[15.9rem] w-full bg-cover bg-no-repeat bg-center   rounded-xl  relative"
+            className=" h-[15.9rem] w-full bg-cover bg-no-repeat bg-center rounded-xl  relative"
           >
-            <div className="absolute bg-neutral-white border border-neutral-silver shadow-lg rounded-lg flex flex-col lg:w-[90%] lg:left-4 lg:right-4  w-full md:gap-4 py-3 gap-2 px-3 bottom-0 lg:-bottom-16 ">
-              <h3 className="text-center md:text-body3 text-body4  font-medium ">
+            <div className="absolute bg-neutral-white shadow-colorsTint-tint5 items-center shadow-lg rounded-lg flex flex-col lg:w-[90%] lg:left-4 lg:right-4  w-full md:gap-4 py-3 gap-2 px-3 bottom-0 lg:-bottom-16 ">
+              <h3 className="text-center md:text-body3 text-body4  font-medium md:w-[80%] ">
                 Create Streamlined Safeguarding Processes with OneRen
               </h3>
-              <span className="text-primary flex justify-center items-center gap-2">
+              <span className="text-primary flex justify-center items-center gap-2  md:text-base text-body4">
                 Read more{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -52,11 +52,12 @@ function Blogs() {
             }}
             className=" h-[15.9rem] w-full bg-cover bg-no-repeat bg-center   rounded-xl  relative"
           >
-            <div className="absolute bg-neutral-white border border-neutral-silver shadow-lg rounded-lg flex flex-col lg:w-[90%] lg:left-4 lg:right-4  w-full md:gap-4 py-3 gap-2 px-3 bottom-0 lg:-bottom-16 ">
-              <h3 className="text-center md:text-body3 text-body4  font-medium ">
-                Create Streamlined Safeguarding Processes with OneRen
+            <div className="absolute bg-neutral-white shadow-colorsTint-tint5 shadow-lg rounded-lg flex flex-col lg:w-[90%] lg:left-4 lg:right-4  w-full md:gap-4 py-3 gap-2 px-3 bottom-0 lg:-bottom-16 items-center ">
+              <h3 className="text-center md:text-body3 text-body4  font-medium md:w-[80%]">
+                What are your safeguarding responsibilities and how can you
+                manage them?
               </h3>
-              <span className="text-primary flex justify-center items-center gap-2">
+              <span className="text-primary flex justify-center items-center gap-2  md:text-base text-body4">
                 Read more{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -81,11 +82,11 @@ function Blogs() {
             }}
             className=" h-[15.9rem] w-full bg-cover bg-no-repeat bg-center   rounded-xl  relative"
           >
-            <div className="absolute bg-neutral-white border border-neutral-silver shadow-lg rounded-lg flex flex-col lg:w-[90%] lg:left-4 lg:right-4  w-full md:gap-4 py-3 gap-2 px-3 bottom-0 lg:-bottom-16 ">
-              <h3 className="text-center md:text-body3 text-body4  font-medium ">
-                Create Streamlined Safeguarding Processes with OneRen
+            <div className="absolute bg-neutral-white  items-center shadow-colorsTint-tint5 shadow-lg rounded-lg flex flex-col lg:w-[90%] lg:left-4 lg:right-4  w-full md:gap-4 py-3 gap-2 px-3 bottom-0 lg:-bottom-16 ">
+              <h3 className="text-center md:text-body3 text-[10px]  font-medium md:w-[73%]">
+                Revamping the Membership Model with Triathlon Australia
               </h3>
-              <span className="text-primary flex justify-center items-center gap-2">
+              <span className="text-primary flex justify-center md:text-base text-body4 items-center gap-2">
                 Read more{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
