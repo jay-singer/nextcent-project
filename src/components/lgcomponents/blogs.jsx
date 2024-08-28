@@ -1,5 +1,4 @@
 function Blogs() {
-  const image = "./assets/bigImage/pana.svg";
   return (
     <div className="lg:mt-12 mt-7">
       <div className="flex flex-col items-center justify-center gap-10 pb-7">
@@ -19,7 +18,7 @@ function Blogs() {
         <div className=" rounded-lg flex  gap-7  w-[75%] lg:flex-nowrap flex-wrap">
           <div
             style={{
-              backgroundImage: `url(${image})`,
+              backgroundImage: `url(./assets/image.jpeg)`,
             }}
             className=" h-[15.9rem] w-full bg-cover bg-no-repeat bg-center rounded-xl  relative"
           >
@@ -48,7 +47,7 @@ function Blogs() {
           </div>
           <div
             style={{
-              backgroundImage: `url(${image})`,
+              backgroundImage: `url(./assets/image1.jpeg)`,
             }}
             className=" h-[15.9rem] w-full bg-cover bg-no-repeat bg-center   rounded-xl  relative"
           >
@@ -78,7 +77,7 @@ function Blogs() {
           </div>
           <div
             style={{
-              backgroundImage: `url(${image})`,
+              backgroundImage: `url(./assets/image2.jpeg)`,
             }}
             className=" h-[15.9rem] w-full bg-cover bg-no-repeat bg-center   rounded-xl  relative"
           >

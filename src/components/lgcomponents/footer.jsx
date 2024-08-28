@@ -20,7 +20,7 @@ function Footer() {
       <div className="flex flex-col items-center gap-5 ">
         {/** first section */}
         <div className=" flex items-center flex-col gap-3">
-          <h1 className="text-neutral-DarkGray font-bold lg:text-[25px] text-center lg:w-[75%]">
+          <h1 className="text-neutral-DarkGray font-bold lg:text-[25px] text-body3 md:text[18px] text-center lg:w-[75%]">
             Pellentesque suscipit fringilla libero eu.
           </h1>
           <SecondaryBtn
