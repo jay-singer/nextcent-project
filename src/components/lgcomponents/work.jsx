@@ -7,24 +7,24 @@ function Work() {
     const sr = ScrollReveal({
       origin: "top",
       distance: "50px",
-      duration: 2000,
+      duration: 100,
       delay: 0,
       reset: true,
     });
     const sr2 = ScrollReveal({
       origin: "top",
       distance: "50px",
-      duration: 2000,
+      duration: 100,
       delay: 100,
       reset: true,
     });
 
     sr.reveal(`.scroll-top`, {
-      opacity: 1,
+      opacity: 0,
       reset: true,
     });
     sr2.reveal(`.scroll-top2`, {
-      opacity: 1,
+      opacity: 0,
       reset: false,
     });
   }, []);

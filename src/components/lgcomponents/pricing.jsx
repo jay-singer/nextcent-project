@@ -11,13 +11,13 @@ function Pricing() {
     const sr = ScrollReveal({
       origin: "top",
       distance: "30px",
-      duration: 2000,
+      duration: 100,
       delay: 0,
       reset: true,
     });
 
     sr.reveal(`.scroll-top`, {
-      opacity: 1,
+      opacity: 0,
       reset: true,
     });
   }, []);
