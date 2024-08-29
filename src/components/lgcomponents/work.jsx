@@ -7,26 +7,20 @@ function Work() {
     const sr = ScrollReveal({
       origin: "top",
       distance: "50px",
-      duration: 100,
+      duration: 1000,
       delay: 0,
       reset: true,
     });
     const sr2 = ScrollReveal({
       origin: "top",
       distance: "50px",
-      duration: 100,
-      delay: 100,
+      duration: 1000,
+      delay: 0,
       reset: true,
     });
 
-    sr.reveal(`.scroll-top`, {
-      opacity: 0,
-      reset: true,
-    });
-    sr2.reveal(`.scroll-top2`, {
-      opacity: 0,
-      reset: false,
-    });
+    sr.reveal(`.scroll-top`);
+    sr2.reveal(`.scroll-top2`);
   }, []);
   return (
     <div className="lg:mt-12 mt-7">

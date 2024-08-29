@@ -16,10 +16,7 @@ function Pricing() {
       reset: true,
     });
 
-    sr.reveal(`.scroll-top`, {
-      opacity: 0,
-      reset: true,
-    });
+    sr.reveal(`.scroll-top`);
   }, []);
   return (
     <div className="lg:mt-12 mt-7 scroll-top">
