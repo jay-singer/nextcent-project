@@ -1,6 +1,22 @@
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 function Blogs() {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "bottom",
+      distance: "50px",
+      duration: 1000,
+      delay: 0,
+      reset: false,
+    });
+
+    sr.reveal(`.scroll-bottom`, {
+      opacity: 1,
+      reset: true,
+    });
+  }, []);
   return (
-    <div className="lg:mt-12 mt-7">
+    <div className="lg:mt-12 mt-7 scroll-bottom">
       <div className="flex flex-col items-center justify-center gap-10 pb-7">
         {/** First Section */}
         <div className="flex flex-col items-center gap-3">

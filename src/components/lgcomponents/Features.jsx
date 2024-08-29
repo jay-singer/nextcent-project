@@ -1,8 +1,20 @@
+import { useEffect } from "react";
 import SecondaryBtn from "../smlcomponents/secondaryBtn";
-
+import ScrollReveal from "scrollreveal";
 function Feature() {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "50px",
+      duration: 2000,
+      delay: 0,
+      reset: true,
+    });
+
+    sr.reveal(`.scroll-top`);
+  }, []);
   return (
-    <div className="lg:mt-10 mt-7">
+    <div className="lg:mt-10 mt-7 scroll-top">
       <div className="flex justify-evenly items-center lg:flex-row flex-col lg:gap-0 gap-7">
         <div className="">
           <img className="h-full" src="./assets/bigImage/Frame 35.svg" alt="" />

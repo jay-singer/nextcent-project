@@ -1,6 +1,28 @@
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
 function Pricing() {
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Set to false to trigger every time the element enters the viewport
+    threshold: 0.5, // Trigger when 50% of the element is visible
+  });
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "30px",
+      duration: 2000,
+      delay: 0,
+      reset: true,
+    });
+
+    sr.reveal(`.scroll-top`, {
+      opacity: 1,
+      reset: true,
+    });
+  }, []);
   return (
-    <div className="lg:mt-12 mt-7">
+    <div className="lg:mt-12 mt-7 scroll-top">
       <div className="flex  gap-10 lg:gap-0 lg:justify-around md:flex-row flex-col  justify-center md:items-start items-center">
         <div className="  md:ps-0 ps-5">
           <h1 className="text-neutral-DarkGray font-bold lg:text-[25px] text-start ">
@@ -22,9 +44,16 @@ function Pricing() {
                 src="./assets/2image/Icon (3).svg"
                 alt=""
               />
-              <div>
+              <div ref={ref}>
                 <h1 className="lg:text-[19px] font-bold md:text-body2 text-body3">
-                  2,245,341
+                  {inView && (
+                    <CountUp
+                      start={20000}
+                      end={2245341}
+                      duration={3}
+                      separator=","
+                    />
+                  )}
                 </h1>
                 <p className="text-neutral-Gray md:text-body4 text-[10px]  lg:text-body3">
                   Members
@@ -39,7 +68,13 @@ function Pricing() {
               />
               <div>
                 <h1 className="lg:text-[19px] md:text-body2 text-body3 font-bold">
-                  2,245,341
+                  <CountUp
+                    start={2000}
+                    end={46328}
+                    duration={3}
+                    enableScrollSpy
+                    scrollSpyOnce={false}
+                  />
                 </h1>
                 <p className="text-neutral-Gray md:text-body4  text-[10px] lg:text-body3 ">
                   Clubs
@@ -56,7 +91,13 @@ function Pricing() {
               />
               <div>
                 <h1 className="lg:text-[19px] font-bold md:text-body2 text-body3">
-                  2,245,341
+                  <CountUp
+                    start={20000}
+                    end={8282967}
+                    duration={5}
+                    enableScrollSpy
+                    scrollSpyOnce={false}
+                  />
                 </h1>
                 <p className="text-neutral-Gray md:text-body4 text-[10px]  lg:text-body3">
                   Event Bookings
@@ -71,7 +112,13 @@ function Pricing() {
               />
               <div>
                 <h1 className="lg:text-[19px] font-bold md:text-body2 text-body3">
-                  2,245,341
+                  <CountUp
+                    start={40000}
+                    end={1926436}
+                    duration={5}
+                    enableScrollSpy
+                    scrollSpyOnce={false}
+                  />
                 </h1>
                 <p className="text-neutral-Gray md:text-body4 text-[10px]  lg:text-body3 ">
                   Payments

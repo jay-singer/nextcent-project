@@ -1,11 +1,38 @@
+import { useEffect } from "react";
 import SecondaryBtn from "../smlcomponents/secondaryBtn";
+import ScrollReveal from "scrollreveal";
 
 function Work() {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "50px",
+      duration: 2000,
+      delay: 0,
+      reset: true,
+    });
+    const sr2 = ScrollReveal({
+      origin: "top",
+      distance: "50px",
+      duration: 2000,
+      delay: 100,
+      reset: true,
+    });
+
+    sr.reveal(`.scroll-top`, {
+      opacity: 1,
+      reset: true,
+    });
+    sr2.reveal(`.scroll-top2`, {
+      opacity: 1,
+      reset: false,
+    });
+  }, []);
   return (
     <div className="lg:mt-12 mt-7">
       <div className="flex  justify-center items-center flex-col gap-10">
         {/** First section */}
-        <div className=" flex  lg:flex-row flex-col justify-center items-center md:w-[80%]  w-3/4   gap-5">
+        <div className=" scroll-top flex  lg:flex-row flex-col justify-center items-center md:w-[80%]  w-3/4   gap-5">
           {/** image division */}
           <div>
             <img
@@ -34,7 +61,7 @@ function Work() {
           </div>
         </div>
         {/** Second section */}
-        <div className=" flex  lg:flex-row flex-col justify-center items-center md:w-[80%]  w-3/4   md:gap-10 gap-2">
+        <div className=" scroll-top2  flex  lg:flex-row flex-col justify-center items-center md:w-[80%]  w-3/4   md:gap-10 gap-2">
           {/** image division */}
           <div className="lg:w-[26rem] md:w-[20rem] lg:self-start ">
             <img

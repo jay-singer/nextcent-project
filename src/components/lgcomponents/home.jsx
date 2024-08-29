@@ -1,10 +1,23 @@
+import { useEffect } from "react";
 import SecondaryBtn from "../smlcomponents/secondaryBtn";
+import ScrollReveal from "scrollreveal";
 
 function Home() {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      origin: "top",
+      distance: "50px",
+      duration: 2000,
+      delay: 0,
+      reset: true,
+    });
+
+    sr.reveal(`.scroll-top`);
+  }, []);
   return (
-    <div className=" text-fontFAm ">
+    <div className=" text-fontFAm  scroll-top ">
       <div className=" mt-[72px] mx-auto container w-full flex justify-around lg:flex-row flex-col items-center gap-10  lg:gap-40 lg:pt-10">
-        <div className="  flex flex-col justify-evenly gap-5">
+        <div className="scroll-right flex flex-col justify-evenly gap-5">
           <h1 className="lg:text-fontXl text-lg md:text-4xl font-bold flex md:flex-col  md:justify-start justify-center md:gap-3 gap-1 md:items-start items-center">
             <span className="md:text-start text-center whitespace-nowrap">
               Lessons and insights
@@ -20,7 +33,7 @@ function Home() {
         </div>
         <div>
           <img
-            className="lg:w-[280px]"
+            className=" lg:w-[280px]"
             src="./assets/bigImage/Illustration.svg"
             alt="illustration"
           />
