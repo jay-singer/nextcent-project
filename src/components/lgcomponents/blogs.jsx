@@ -5,7 +5,7 @@ function Blogs() {
     const sr = ScrollReveal({
       origin: "bottom",
       distance: "50px",
-      duration: 1000,
+      duration: 100,
       delay: 0,
       reset: false,
     });
